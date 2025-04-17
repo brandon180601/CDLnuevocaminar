@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDL un Nuevo Caminar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <a id="bienvenido"></a>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span class="site-title">CDL un Nuevo Caminar</span>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <ul>
+                <li><a href="#bienvenido">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#login" class="login-btn">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+        <!-- Menú Hamburguesa -->
+        <button class="hamburger" id="hamburger">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+    </header>
+
+    <!-- Imagen con cita bíblica -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>"Mas la hora viene, y ahora es, cuando los verdaderos adoradores adorarán al Padre en espíritu y en
+                verdad; porque también el Padre tales adoradores busca que le adoren."</h1>
+            <span class="verse">- Juan 4:23 -</span>
+        </div>
+    </section>
+    <a id="nosotros"></a>
+    <!-- Sección de Bienvenida -->
+    <section class="welcome">
+        <h2>Bienvenidos a CDL un Nuevo Caminar</h2>
+        <p>En este tiempo difícil, Dios ha puesto una carga en nuestro corazón por la necesidad de salvación en las
+            personas que nos rodean. Nuestro mayor anhelo es llevar el Reino de Jesús a sus vidas.</p>
+        <p>Nos emociona poder compartir con ustedes el amor de Cristo y el plan de salvación. ¡Nos encantaría conocerte
+            y que formes parte de nuestra familia en la fe!</p>
+    </section>
+    <div class="contenedor">
+        <div class="imagen actual">
+            <img src="cdl.jpg" />
+        </div>
+
+        <div class="imagen">
+            <img src="cdl2.jpg" />
+        </div>
+
+        <div class="imagen">
+            <img src="cdl3.jpg" />
+        </div>
+
+        <div class="imagen">
+            <img src="cdl4.jpg" />
+        </div>
+
+        <div class="imagen">
+            <img src="cdl5.jpg" />
+        </div>
+
+        <a class="anterior" onclick="anterior();">&#10094;</a>
+        <a class="siguiente" onclick="siguiente();">&#10095;</a>
+
+        <div class="puntos">
+            <span class="punto activo" onclick="mostrar(0);"></span>
+            <span class="punto" onclick="mostrar(1);"></span>
+            <span class="punto" onclick="mostrar(2);"></span>
+            <span class="punto" onclick="mostrar(3);"></span>
+            <span class="punto" onclick="mostrar(4);"></span>
+        </div>
+
+        <!-- Botón de reproducción/pausa -->
+        <a href="#" class="boton-playpause" onclick="playpause(event);">
+            <img src="https://cdn-icons-png.flaticon.com/128/4340/4340038.png" id="btn" alt="Play/Pause">
+        </a>
+
+        <a id="servicios"></a>
+
+    </div>
+    <section class="horarios-section">
+        <div class="horarios-header">
+            <h2>Horarios de Servicios</h2>
+            <p>¡Te esperamos con los brazos abiertos para compartir la Palabra de Dios y crecer juntos en la fe!</p>
+        </div>
+    
+        <div class="horarios-grid">
+            <!-- Servicio General -->
+            <div class="horario-item">
+                <img src="servicio.jpg" alt="Servicio General">
+                <div class="horario-info">
+                    <h3>Servicio General</h3>
+                    <p class="horario-dia">Domingos a las 11:00 A.M.</p>
+                    <p>Un tiempo de alabanza, adoración y un mensaje de esperanza.</p>
+                </div>
+            </div>
+    
+            <!-- Estudio Bíblico -->
+            <div class="horario-item">
+                <img src="estudio.jpg" alt="Estudio Bíblico">
+                <div class="horario-info">
+                    <h3>Estudio Bíblico</h3>
+                    <p class="horario-dia">Miércoles a las 3:30 P.M.</p>
+                    <p>Profundiza en la Palabra de Dios y encuentra dirección para tu vida.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <a id="contacto"></a>
+    <!-- Mapa -->
+    <section class="ubicacion">
+        <h2>Ubicación</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15050.240259326793!2d-98.9725863!3d19.4314053!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1e333ca352ee5%3A0xf4368aa999fbcb4!2sCDL%20Un%20Nuevo%20Caminar!5e0!3m2!1ses-419!2smx!4v1729828186708!5m2!1ses-419!2smx"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profile.php?id=100064600693563" target="_blank"><i
+                    class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/brillonuevocdl/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/@cdlnuevocaminar1068" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>var actual = 0;
+        var velocidad = 2500;
+        var play;
+
+        function puntos(n) {
+            var ptn = document.getElementsByClassName("punto");
+            for (i = 0; i < ptn.length; i++) {
+                if (ptn[i].className.includes("activo")) {
+                    ptn[i].className = ptn[i].className.replace("activo", "");
+                    break;
+                }
+            }
+            ptn[n].className += " activo";
+        }
+
+        function mostrar(n) {
+            var imagenes = document.getElementsByClassName("imagen");
+            for (i = 0; i < imagenes.length; i++) {
+                if (imagenes[i].className.includes("actual")) {
+                    imagenes[i].className = imagenes[i].className.replace("actual", "");
+                    break;
+                }
+            }
+            actual = n;
+            imagenes[n].className += " actual";
+            puntos(n);
+        }
+
+        function siguiente() {
+            actual++;
+            if (actual > 4) {
+                actual = 0;
+            }
+            mostrar(actual);
+            resetInterval();
+        }
+
+        function anterior() {
+            actual--;
+            if (actual < 0) {
+                actual = 4;
+            }
+            mostrar(actual);
+            resetInterval();
+        }
+
+        function playpause(event) {
+            event.preventDefault(); // Previene el salto al inicio
+
+            var boton = document.getElementById("btn");
+
+            if (play == null) {
+                boton.src = "https://cdn-icons-png.flaticon.com/128/4340/4340038.png"; // Ícono de pausa
+                play = setInterval(siguiente, velocidad);
+            } else {
+                clearInterval(play);
+                play = null;
+                boton.src = "https://cdn-icons-png.flaticon.com/128/4980/4980134.png"; // Ícono de play
+            }
+        }
+
+
+        function resetInterval() {
+            if (play !== null) {
+                clearInterval(play);
+                play = setInterval(siguiente, velocidad);
+            }
+        }
+        
+
+        // Iniciar el carrusel
+        play = setInterval(siguiente, velocidad);</script>
+</body>
+
+</html>
