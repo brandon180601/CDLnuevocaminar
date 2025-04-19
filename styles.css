@@ -339,6 +339,8 @@ body {
 /* Mapa */
 .ubicacion {
     padding: 40px;
+    padding-left: 0;
+    padding-right: 0;
     text-align: center;
 }
 
@@ -513,6 +515,14 @@ body {
 
     .ubicacion h2 {
         font-size: 24px;
+    }
+
+    .ubicacion iframe{
+        height: 200px;
+    }
+    .ubicacion{
+        padding: 0;
+        margin-bottom: 30px;
     }
 
     .contenedor {
