@@ -33,6 +33,24 @@
         </button>
     </header>
 
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('nav-menu');
+      
+        // Alternar visibilidad al hacer clic en el botón hamburguesa
+        hamburger.addEventListener('click', () => {
+          navMenu.classList.toggle('active'); // o 'hidden' si usas Tailwind
+        });
+      
+        // Cerrar el menú al hacer clic en cualquier enlace
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+          link.addEventListener('click', () => {
+            navMenu.classList.remove('active'); // o 'hidden'
+          });
+        });
+      </script>
+      
+
     <!-- Imagen con cita bíblica -->
     <section class="hero" id="inicio">
         <div class="hero-text">
