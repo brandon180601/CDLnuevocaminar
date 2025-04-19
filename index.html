@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <a id="bienvenido"></a>
+    <!-- <a id="bienvenido"></a> -->
     <!-- Header -->
     <header class="header">
         <div class="logo">
@@ -19,10 +19,10 @@
         </div>
         <nav class="nav" id="nav-menu">
             <ul>
-                <li><a href="#bienvenido">Inicio</a></li>
+                <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
                 <li><a href="#login" class="login-btn">Iniciar sesión</a></li>
             </ul>
         </nav>
@@ -35,7 +35,7 @@
     </header>
 
     <!-- Imagen con cita bíblica -->
-    <section class="hero">
+    <section class="hero" id="inicio">
         <div class="hero-text">
             <h1>"Mas la hora viene, y ahora es, cuando los verdaderos adoradores adorarán al Padre en espíritu y en
                 verdad; porque también el Padre tales adoradores busca que le adoren."</h1>
@@ -43,8 +43,9 @@
         </div>
     </section>
     <!-- Sección de Bienvenida -->
+    <a id="nosotros"></a>
     <section class="welcome">
-        <a id="nosotros"></a>
+        <!-- <a id="nosotros"></a> -->
         <h2>Bienvenidos a CDL un Nuevo Caminar</h2>
         <p>En este tiempo difícil, Dios ha puesto una carga en nuestro corazón por la necesidad de salvación en las
             personas que nos rodean. Nuestro mayor anhelo es llevar el Reino de Jesús a sus vidas.</p>
@@ -75,7 +76,7 @@
         <a class="anterior" onclick="anterior();">&#10094;</a>
         <a class="siguiente" onclick="siguiente();">&#10095;</a>
 
-        <div class="puntos">
+        <div class="puntos" id="servicios">
             <span class="punto activo" onclick="mostrar(0);"></span>
             <span class="punto" onclick="mostrar(1);"></span>
             <span class="punto" onclick="mostrar(2);"></span>
@@ -87,11 +88,11 @@
         <a href="#" class="boton-playpause" onclick="playpause(event);">
             <img src="https://cdn-icons-png.flaticon.com/128/4340/4340038.png" id="btn" alt="Play/Pause">
         </a>
-
-        
     </div>
-    <section class="horarios-section">
-        <a id="servicios"></a>
+
+
+    <section class="horarios-section" id="servicios">
+        <!-- <a id="servicios"></a> -->
         <div class="horarios-header">
             <h2>Horarios de Servicios</h2>
             <p>¡Te esperamos con los brazos abiertos para compartir la Palabra de Dios y crecer juntos en la fe!</p>
@@ -121,8 +122,8 @@
     </section>
     
     <!-- Mapa -->
-    <section class="ubicacion">
-        <a id="contacto"></a>
+    <section class="ubicacion" id="ubicacion">
+        <!-- <a id="contacto"></a> -->
         <h2>Ubicación</h2>
         <div class="map-container">
             <iframe
